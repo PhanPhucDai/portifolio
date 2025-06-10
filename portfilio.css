@@ -1,0 +1,278 @@
+/* RESET & BODY */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body.dark {
+  background-color: #121212 !important;
+  color: #f5f5f5 !important;
+}
+
+body.dark a {
+  color: #90caf9;
+}
+
+body.dark h1, 
+body.dark h2, 
+body.dark p {
+  color: #f5f5f5;
+} 
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0f0f0f;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* HEADER NAV */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0f0f0f; /* hoặc màu bạn muốn */
+  z-index: 9999; /* đảm bảo nằm trên tất cả */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* hiệu ứng đổ bóng cho đẹp */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 30px;
+  margin: 0;
+  list-style: none;
+}
+
+nav li {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+nav button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+nav button:hover {
+  background-color: #0056b3;
+}
+
+
+/* SECTION SHARED STYLE */
+section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 30px ;
+  background: #1e1e1e;
+  border-radius: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* INTRO SECTION */
+.intro {
+  text-align: center;
+}
+
+h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 123, 255, 0.4); /* glow xanh dương */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 123, 255, 0.6);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.job-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #00ffcc  !important;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #ccc;
+}
+
+/* TECH STACK */
+.tech-section img {
+  height: 100px;
+  width: 100px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 1rem;
+  padding: 10px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tech-section img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tech-swiper {
+  padding: 20px 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #007bff;
+}
+
+ 
+ 
+
+/* PROJECT SECTION */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+   
+  justify-content: center;
+  gap: 30px;
+}
+
+.project-box, .project-big {
+  background-color: #292929;
+  border-radius: 20px;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 25px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.1);
+}
+
+.project-box:hover,
+.project-big:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+}
+
+/* TAGS */
+.contact-section {
+  text-align: center;
+  padding: 40px;
+  background: #292929;
+}
+
+.contact-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  background: rgb(51, 50, 50);
+  border-radius: 15px;
+  padding: 20px 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card img {
+  width: 40px;
+  height: 40px;
+}
+
+.contact-card a,
+.contact-card span {
+  font-size: 1.1rem;
+  color: #333;
+  text-decoration: none;
+}
+.mail-form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 500px;
+  margin-inline: auto;
+}
+
+.mail-form input,
+.mail-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid rgb(51, 50, 50);
+  border-radius: 10px;
+  font-size: 1rem;
+  resize: none;
+}
+
+.mail-form textarea {
+  height: 120px;
+}
+
+.mail-form button {
+  background-color: #007bff;
+  color: rgb(51, 50, 50);
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.mail-form button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #1f1f1f;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  margin-top: 20px;
+}
