@@ -8,6 +8,40 @@ body.dark {
   background-color: #121212 !important;
   color: #f5f5f5 !important;
 }
+.custom-download-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.custom-download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+}
+
+.custom-download-btn::after {
+  content: '⬇️';
+  margin-left: 8px;
+  animation: bounce 1s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+}
 
 body.dark a {
   color: #90caf9;
